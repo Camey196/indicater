@@ -1,0 +1,202 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFDD00;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000;
+    animation: fadeIn 1s ease-in;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    animation: fadeIn 1s ease-in;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.hero {
+    background-color: #FFDD00;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+    animation: slideIn 1s ease-in;
+    position: relative;
+}
+
+.hero h1, .hero p, .cta {
+    opacity: 0;
+}
+
+.hero h1.fade-in {
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.hero p.fade-in {
+    animation: fadeIn 3s ease-in forwards;
+}
+
+.cta.fade-in {
+    animation: fadeIn 4s ease-in forwards;
+}
+
+.cta {
+    background-color: #333;
+    color: #FFDD00;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 50px; /* Adjust this value to move the button lower */
+    display: inline-block;
+}
+
+.cta:hover {
+    background-color: #000;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products, .about, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h1, .about h1, .contact h1 {
+    animation: slideIn 1s ease-in;
+}
+
+.products .product-card, .about p, .contact p {
+    opacity: 0;
+}
+
+.products .product-card.fade-in, .about p.fade-in, .contact p.fade-in {
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    animation: fadeIn 1s ease-in;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    margin: 0 0 10px;
+    color: #FFDD00;
+}
+
+.product-card p {
+    color: #555;
+}
+
+.product-card button {
+    background-color: #FFDD00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #FFC107;
+}
+
+footer {
+    background-color: #333;
+    color: #FFDD00;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 1s forwards;
+}
+
+.delay-1s {
+    animation-delay: 1s;
+}
+
+.delay-2s {
+    animation-delay: 1s;
+}
+
+.delay-3s {
+    animation-delay: 2s;
+}
